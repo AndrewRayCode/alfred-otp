@@ -1,20 +1,19 @@
-# Alfred OTP
+# Alfred OTP Keychain Workflow
 
-Alfred workflow to generate OTP secured in keychain.
+Alfred workflow to generate OTP secured in keychain. Secrets are stored in your keychain "local items", suffixed with the label "-otp".
 
-## How to
-
-- add a new OTP service and token: `otp+ [service] [token]`
-![add new token](/doc/otp+.png)
-
-- generate OTP for a service: `otp [service]`. OTP will be copied to clipboard
-![generate otp](/doc/otp.png)
-
-## Prerequisites
+## Install
 
 - Install `oathtool` via `brew install oath-toolkit`
-- Keychain
+
+## Usage
+
+- Add a new OTP service and token: `otp+ [service] [token]`
+![add new token](/doc/otp+.png)
+
+- Generate OTP for a service: `otp [service]`. OTP is pasted at cursor and copied to clipboard
+![generate otp](/doc/otp.png)
 
 ## Credits
-
-Inspired by https://github.com/MyDeity/OTP-Generator.
+- Forked from https://github.com/caalberts/alfred-otp
+- Inspired by https://github.com/MyDeity/OTP-Generator
